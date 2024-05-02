@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<SpriteSheets>
+    <SpriteSheet name="character_monkey" path='resources/gfx/Characters/Costumes/Character_monkey.png'>
+        <for iter='3' width='32'>
+            <Sprite x='0' y='0' width='32' height='32' />
+        </for>
+        <for iter='3' width='32'>
+            <Sprite x='192' y='0' width='32' height='32' />
+        </for>
+        <for iter='2' width='32'>
+            <Sprite x='448' y='0' width='32' height='32' />
+        </for>
+        <for iter='16' width='32'>
+            <Sprite x='0' y='32' width='32' height='32' />
+        </for>
+        <for iter='16' width='32'>
+            <Sprite x='0' y='64' width='32' height='32' />
+        </for>
+        <for iter='2' width='32'>
+            <Sprite x='0' y='96' width='32' height='32' />
+        </for>
+        <for iter='2' width='32'>
+            <Sprite x='256' y='96' width='32' height='32' />
+        </for>
+        <Sprite x='0' y='128' width='32' height='44' />
+        <Sprite x='39' y='128' width='47' height='32' />
+    </SpriteSheet>
+
+    <SpriteSheet name="leaves_background" path='resources/gfx/Backgrounds/Leaves.png'>
+        <for iter='4' width='52'>
+            <Sprite x='0' y='0' width='52' height='52' />
+        </for>
+        <Sprite x='212' y='0' width='22' height='52' />
+        <for iter='4' width='52'>
+            <Sprite x='0' y='52' width='52' height='52' />
+        </for>
+        <Sprite x='212' y='52' width='22' height='52' />
+        <for iter='4' width='52'>
+            <Sprite x='0' y='104' width='52' height='52' />
+        </for>
+        <Sprite x='212' y='104' width='22' height='52' />
+    </SpriteSheet>
+</SpriteSheets>

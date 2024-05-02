@@ -1,0 +1,67 @@
+<Animations>
+    <AnimatedActor fps="30" name="character_monkey">
+        <Animation name="body_move_pickup_vertical" loop="True">
+            <Sprite id='6' />
+            <Sprite id='7' />
+            <Sprite id='16' />
+            <Sprite id='17' />
+            <Sprite id='18' />
+            <Sprite id='19' />
+            <Sprite id='20' />
+            <Sprite id='21' />
+            <Sprite id='22' />
+            <Sprite id='23' />
+        </Animation>
+
+        <Animation name="body_move_vertical" loop="True">
+            <Sprite id='3' />
+            <Sprite id='4' />
+            <Sprite id='8' />
+            <Sprite id='9' />
+            <Sprite id='10' />
+            <Sprite id='11' />
+            <Sprite id='12' />
+            <Sprite id='13' />
+            <Sprite id='14' />
+            <Sprite id='15' />
+        </Animation>
+
+        <Animation name="body_move_pickup_horizontal" loop="True">
+            <Sprite id='32' />
+            <Sprite id='33' />
+            <Sprite id='34' />
+            <Sprite id='35' />
+            <Sprite id='36' />
+            <Sprite id='37' />
+            <Sprite id='38' />
+            <Sprite id='39' />
+            <Sprite id='42' />
+            <Sprite id='43' />
+        </Animation>
+
+        <Animation name="body_move_horizontal" loop="True">
+            <Sprite id='24' />
+            <Sprite id='25' />
+            <Sprite id='26' />
+            <Sprite id='27' />
+            <Sprite id='28' />
+            <Sprite id='29' />
+            <Sprite id='30' />
+            <Sprite id='31' />
+            <Sprite id='40' />
+            <Sprite id='41' />
+        </Animation>  
+
+        <Animation name="head_look_down" loop="True">
+            <Sprite id='0' />
+        </Animation>
+
+        <Animation name="head_look_horizontal" loop="True">
+            <Sprite id='1' />
+        </Animation>
+
+        <Animation name="head_look_up" loop="True">
+            <Sprite id='2' />
+        </Animation>   
+    </AnimatedActor>
+</Animations>
