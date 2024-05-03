@@ -1,0 +1,12 @@
+<Controls>
+    <Key name='go_up' key='115' />
+    <Key name='go_left' key='97' />
+    <Key name='go_down' key='115' />
+    <Key name='go_right' key='100' />
+    <Key name='attack_left' key='1073741904' />
+    <Key name='attack_up' key='1073741906' />
+    <Key name='attack_down' key='1073741905' />
+    <Key name='attack_right' key='1073741903' />
+    <Key name='fullscreen' key='102' />
+    <Key name='escape' key='27' />
+</Controls>
