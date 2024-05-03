@@ -1,0 +1,8 @@
+<Characters>
+    <Character name='character_monkey'>
+        <Characteristics luck='1' speed = '0.8' damage = '2' range = '5' shot_speed = '4' health = '6' />
+    </Character>
+    <Character name='character_whso'>
+        <Characteristics luck='-2' speed = '2' damage = '2' range = '2' shot_speed = '2' health = '2' />
+    </Character>
+</Characters>
