@@ -1,5 +1,6 @@
-from abc import ABC, abstractmethod
 from modules.consts import UPDATE_1_1, UPDATE_1_15, UPDATE_1_60
+from modules.loader.controls_loader import ControlsLoader
+from abc import ABC, abstractmethod
 import pygame
 
 
@@ -24,22 +25,27 @@ class UpdateSystem(ABC):
     def quit(self) -> None:
         ...
     
-    def _events(self) -> None:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
+    def _events(self, event) -> None:
+        if event.type == pygame.QUIT:
+            self.quit()
+        if event.type == UPDATE_1_15:
+            self._logic_1_15()
+        if event.type == UPDATE_1_60:
+            self._logic_1_60()
+        if event.type == UPDATE_1_1:
+            self._logic_1_1()
+        if event.type == pygame.KEYDOWN:
+            if event.key == ControlsLoader.CONTROLS['escape']:
                 self.quit()
-            if event.type == UPDATE_1_15:
-                self._logic_1_15()
-            if event.type == UPDATE_1_60:
-                self._logic_1_60()
-            if event.type == UPDATE_1_1:
-                self._logic_1_1()
+            if event.key == ControlsLoader.CONTROLS['fullscreen']:
+                pygame.display.toggle_fullscreen()
 
     def _draw(self) -> None:
         ...
 
     def update(self) -> None:
-        self._events()
+        for event in pygame.event.get():
+            self._events(event)
         self._logic()
         self._draw()
         pygame.display.flip()
